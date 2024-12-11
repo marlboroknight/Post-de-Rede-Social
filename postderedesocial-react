@@ -1,0 +1,51 @@
+Coloque o nome do usuário no topo, usando um Text com uma fonte levemente maior e em negrito.
+Adicione uma imagem central com o componente Image.
+Insira uma descrição abaixo da imagem e aplique um estilo de fundo cinza claro, com espaçamento entre cada elemento.
+
+import React from 'react';
+import { View, Text, Image, StyleSheet } from 'react-native';
+
+export default function SocialPost() {
+  return (
+    <View style={styles.postContainer}>
+      <Text style={styles.userName}>Fernanda Salvatore</Text>
+      <Image 
+        source={{ uri: 'https://images.app.goo.gl/V7DHtR5v4wr3jZhc7/300x200' }} 
+        style={styles.postImage} 
+      />
+      <Text style={styles.postDescription}>
+        Este é um post de exemplo em uma rede social, mostrando uma foto com uma breve descrição.
+      </Text>
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  postContainer: {
+    backgroundColor: '#fff',
+    borderRadius: 10,
+    padding: 15,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.3,
+    shadowRadius: 4,
+    elevation: 5,
+    margin: 20,
+  },
+  userName: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginBottom: 10,
+  },
+  postImage: {
+    width: '100%',
+    height: 200,
+    borderRadius: 10,
+    marginBottom: 10,
+  },
+  postDescription: {
+    fontSize: 16,
+    color: '#666',
+    textAlign: 'justify',
+  },
+});
