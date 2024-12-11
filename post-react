@@ -1,7 +1,3 @@
-Coloque o nome do usuário no topo, usando um Text com uma fonte levemente maior e em negrito.
-Adicione uma imagem central com o componente Image.
-Insira uma descrição abaixo da imagem e aplique um estilo de fundo cinza claro, com espaçamento entre cada elemento.
-
 import React from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
 
